@@ -1,5 +1,14 @@
 /* Styles go here */
 
+:root {
+    --wprey: rgb(137, 226, 144);
+    --wprey-border: rgb(87, 211, 97);
+    --pred: rgb(224, 172, 95);
+    --pred-border: rgb(218, 154, 59);
+    --uprey: rgb(199, 130, 226);
+    --uprey-border: rgb(184, 118, 211);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -62,8 +71,8 @@ p {
     font-family: "Kanit", sans-serif;
     font-size: larger;
     font-weight: bold;
-    background-color: rgb(224, 172, 95);
-    border: 3px solid rgb(218, 154, 59);
+    background-color: var(--pred);
+    border: 3px solid var(--pred-border);
     border-radius: 15px;
     box-shadow: 3px 3px 12px black;
 }
@@ -74,8 +83,8 @@ p {
     font-family: "Kanit", sans-serif;
     font-size: larger;
     font-weight: bold;
-    background-color: rgb(137, 226, 144);
-    border: 3px solid rgb(87, 211, 97);
+    background-color: var(--wprey);
+    border: 3px solid var(--wprey-border);
     border-radius: 15px;
     box-shadow: 3px 3px 12px black;
 }
@@ -86,8 +95,8 @@ p {
     font-family: "Kanit", sans-serif;
     font-size: larger;
     font-weight: bold;
-    background-color: rgb(199, 130, 226);
-    border: 3px solid rgb(184, 118, 211);
+    background-color: var(--uprey);
+    border: 3px solid var(--uprey-border);
     border-radius: 15px;
     box-shadow: 3px 3px 12px black;
 }

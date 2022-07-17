@@ -5,10 +5,11 @@
 
 :root {
     /* Theme Colors */
-    --menu: rgb(221,216,202);
+    --menu: rgb(216,216,216);
     --pred: rgb(224, 172, 95);
     --wPrey: rgb(137, 226, 144);
     --uPrey: rgb(199, 130, 226);
+    --switch: rgb(127,127,255);
     /* Score Colors */
     --indShaMain: #c6be4a;
     --indShaAlt: #772;
@@ -19,7 +20,7 @@
     --sexSenMain: #e67198;
     --sexSenAlt: #744;
     /* This one is vital for the aetheic programming */
-    --currentTheme: rgb(221,216,202);
+    --currentTheme: rgb(216,216,216);
 }
 
 /* Page Setup*/
@@ -34,7 +35,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), #222;
+    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), #222;
     background-size: contain;
     background-attachment: fixed;
     color: #fff;
@@ -75,19 +76,25 @@ p {
 
 /* Test Themes */
 .predbody {
-    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), #222;
+    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), #222;
     background-size: contain;
     background-attachment: fixed;
 }
 
 .wpreybody {
-    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), #222;
+    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), #222;
     background-size: contain;
     background-attachment: fixed;
 }
 
 .upreybody {
-    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(5vw,5vh)), #222;
+    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), #222;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.switchbody {
+    background: linear-gradient(0deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(90deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(180deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), linear-gradient(270deg, var(--currentTheme) 0, #0000 min(2vw,2vh)), #222;
     background-size: contain;
     background-attachment: fixed;
 }
@@ -166,7 +173,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    filter: drop-shadow(3px 3px 12px #000);
+    filter: drop-shadow(3px 3px 6px #000);
 }
 
     .pick-button-container button {
@@ -192,7 +199,7 @@ p {
 
     .pick-pred:hover {
         background-color: var(--pred);
-        filter: drop-shadow(3px 3px 12px var(--pred));
+        filter: drop-shadow(3px 3px 6px var(--pred));
     }
 
 .pick-wprey {
@@ -200,7 +207,7 @@ p {
 }
 
     .pick-wprey:hover {
-        filter: drop-shadow(3px 3px 12px var(--wPrey));
+        filter: drop-shadow(3px 3px 6px var(--wPrey));
     }
 
 .pick-uprey {
@@ -208,7 +215,15 @@ p {
 }
 
     .pick-uprey:hover {
-        filter: drop-shadow(3px 3px 12px var(--uPrey));
+        filter: drop-shadow(3px 3px 6px var(--uPrey));
+    }
+
+.pick-switch {
+    background-color: var(--switch);
+}
+
+    .pick-switch:hover {
+        filter: drop-shadow(3px 3px 6px var(--switch));
     }
 
 /* Test Buttons */
@@ -262,13 +277,6 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-
-caption {
-}
-
-td {
-}
-
 
 tr {
     text-align: center;
@@ -418,4 +426,29 @@ table tr:last-of-type {
         #results-buttons > *:last-child {
             border-radius: 0 1em 1em 0;
             border-right: none;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .pick-button-container {
+                flex-direction: column;
+                gap: 1.5em;
+            }
+        
+            .testbuttons-container {
+                flex-direction: column;
+                gap: 1.5em;
+            }
+
+            .pick-button-container button {
+                border-radius: 1em 1em 1em 1em;
+            }
+            .pick-button-container button:first-of-type {
+                border-radius: 1em 1em 1em 1em;
+            }
+            .pick-button-container button:last-of-type {
+                border-radius: 1em 1em 1em 1em;
+            }
+    
         }
